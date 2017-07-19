@@ -3,7 +3,7 @@ A container for building customized CoreOS VMs from template
 
 ## Description
 
-The CoreOS VM Backdoor allows you to inject guestinfo config after cloning a VM to customize host config.  This includes an encoded cloud-config file which will basically let you customize the host however you want.  
+The VM Backdoor allows you to inject CoreOS guestinfo config after cloning a VM to customize host config.  This includes an encoded cloud-config file which will basically let you customize the host however you want.  
 
 This docker image includes a script (makecorevm.rb) that uses rbvmomi to clone such a VM and inject your custom config.
 
