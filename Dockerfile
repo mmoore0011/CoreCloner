@@ -5,3 +5,4 @@ RUN apk add --no-cache build-base && \
     gem install rbvmomi trollop 
 
 COPY makecorevm.rb /scripts
+COPY cloud-config.yml /scripts
