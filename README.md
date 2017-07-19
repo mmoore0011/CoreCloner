@@ -30,7 +30,9 @@ For flexibility I used a lot of command-line options, which can always be script
 ## Troubleshooting
 - If the VM gets cloned properly and comes up without a config, you probably have invalid guestconfig parameters.  Check the following:
 1.  Get into a shell on the console (coreos.autologin appended to grub line) 
+
 https://coreos.com/os/docs/latest/other-settings.html#adding-custom-kernel-boot-options
+
 2. sudo coreos-cloudinit --from-vmware-guestinfo
 
 - A common cause is not specifying the ip correcly on the command line.  Note that you have to specify the CIDR.  Eg.  10.0.0.1/24
