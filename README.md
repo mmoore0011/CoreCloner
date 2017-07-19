@@ -38,7 +38,7 @@ For flexibility I used a lot of command-line options, which can always be script
 #### CoreOS instructions
 https://coreos.com/os/docs/latest/booting-on-vmware.html
 
-#### Another practical example of doing something similar with powershell...  much thanks to Robert Labrie for showing that this is possible
+#### Another practical example of doing something similar with powershell...  much thanks to @robertlabrie for showing that this is possible
 https://robertlabrie.wordpress.com/2015/09/27/coreos-on-vmware-using-vmware-guestinfo-api/
 
 #### More helpful info
