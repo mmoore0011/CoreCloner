@@ -29,7 +29,7 @@ For flexibility I used a lot of command-line options, which can always be script
 
 ## Troubleshooting
 - If the VM gets cloned properly and comes up without a config, you probably have invalid guestconfig parameters.  Check the following:
-1.  Get into a shell on the console (coreos.autologin appended to grub line) 
+1.  Get into a shell on the console (append coreos.autologin to grub line) 
 
 https://coreos.com/os/docs/latest/other-settings.html#adding-custom-kernel-boot-options
 
