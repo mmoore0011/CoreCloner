@@ -8,7 +8,6 @@ users:
     ssh-authorized-keys:
       - "key"
     groups:
-      - "sudo"
       - "docker"
 
 coreos:
