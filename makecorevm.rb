@@ -1,7 +1,7 @@
 #!/usr/local/bin/ruby
 
 # example usage
-#./makecorevm.rb -o [Vcenter Host] -k -u [user] --folder [folder] -D [datacenter] -p [password] -i [ip] -n [nameserver] -g [gateway] -c [cloud yml] [vmname]
+#./makecorevm.rb -o [Vcenter Host] -k -u [user] --folder [folder] -D [datacenter] -p [password] -i [CIDR] -n [nameserver] -g [gateway] -c [cloud yml] [vmname]
 
 require 'trollop'
 require 'rbvmomi'
@@ -40,7 +40,7 @@ Other options:
   EOS
 
   opt :list_vms, "List all vms in specified folder"
-  opt :ip, "ip address to give VM", :type => String, :required => true
+  opt :ip, "CIDR ip address to give VM (eg. 10.0.0.1/24)", :type => String, :required => true
   opt :config, "Your cloud config yaml", :type => String, :required => true
   opt :gw, "The default gateway to give the VM", :type => String, :required => true
   opt :dns, "The dns server to give the VM", :type => String, :required => true
@@ -49,7 +49,7 @@ Other options:
 end
 
 Trollop.die("must specify vSphere hostname") unless opts[:host]
-Trollop.die("must specify ip for vm") unless opts[:ip]
+Trollop.die("must specify ip for vm (eg. 10.0.0.1/24)") unless opts[:ip]
 Trollop.die("must specify cloudconfig file") unless opts[:config]
 Trollop.die("must specify default gw for vm") unless opts[:gw]
 Trollop.die("must specify domain name server for vm") unless opts[:dns]
