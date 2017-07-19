@@ -10,10 +10,15 @@ This docker image includes a script (and all you need to run it) that uses rbvmo
 ## HowTO
 1.  Download a CoreOS VMware OVA and import it as a template into your datecenter
   https://coreos.com/os/docs/latest/booting-on-vmware.html#booting-with-vmware-esxi
+
+2.  Pull down this repo:
 ~~~
 git clone https://github.com/mmoore0011/CoreCloner.git
 ~~~
-Edit cloud-config.yml
+
+3.  Edit cloud-config.yml
+
+4.  Build and run:
 ~~~
 docker build .
 docker run [IMAGE] /scripts/makecorevm.rb -o [VSphere Host] -k -u [USER] [--folder [FOLDER]] -D [DATACENTER] -p [PASSWORD] -i [IP] -g [GATEWAY] -n [NAMESERVER] --pool [RESOURCE POOL] --config [CLOUD CONFIG YML] [GUEST NAME]
