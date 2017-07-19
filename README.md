@@ -16,7 +16,8 @@ This docker image includes a script (makecorevm.rb) that uses rbvmomi to clone s
 git clone https://github.com/mmoore0011/CoreCloner.git
 ~~~
 
-3.  Edit cloud-config.yml
+3.  Edit cloud-config.yml 
+https://coreos.com/os/docs/latest/cloud-config.html
 
 4.  Build and run:
 ~~~
