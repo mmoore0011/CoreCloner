@@ -1,5 +1,5 @@
 # CoreCloner
-A simple ruby image with a script to build customized CoreOS VMs from template
+A container for building customized CoreOS VMs from template
 
 ## Description
 
