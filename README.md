@@ -26,6 +26,11 @@ docker run [IMAGE] /scripts/makecorevm.rb -o [VSphere Host] -k -u [USER] [--fold
 
 For flexibility I used a lot of command-line options, which can always be scripted.  Note that you must create a cloud-config for the script to use unless you wat to just clone mindless copies of CoreOS
 
+## Troubleshooting
+If the VM gets cloned properly and comes up without a config, the most common issue is an invalid cloud-config.yml.  This can be confirmed by:
+1.  getting into a shell on the console (coreos.autologin appended to grub line)
+2.  journalctl | grep "not a config"
+
 ## References
 #### CoreOS instructions
 https://coreos.com/os/docs/latest/booting-on-vmware.html
